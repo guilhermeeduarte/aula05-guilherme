@@ -22,3 +22,7 @@ test('distância negativa lança erro', () => {
 // assert.throws passa SÓ SE a função der erro com essa mensagem
 assert.throws(() => calcularFrete(-1), /distância inválida/);
 });
+
+test('frete da minha entrega de 21 km custa R$ 23', () => {
+  assert.strictEqual(calcularFrete(21), 23);
+});
